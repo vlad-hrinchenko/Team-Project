@@ -179,7 +179,7 @@ h6 {
   fill: #3350e9;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .header-list {
     display: none;
   }
@@ -198,7 +198,8 @@ h6 {
     position: fixed;
     top: 0;
     right: 0;
-    width: 200px;
+    width: 80%;
+    max-width: 200px;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -223,13 +224,15 @@ h6 {
   .button-icon-close {
     stroke: #fbfbfb;
   }
+  
   .mobile-menu-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     gap: 32px;
-    padding-top: 240px;
+    padding-top: 50%;
+    padding-bottom: 50%;
   }
   .menu-item {
     font-size: 14px;
@@ -240,7 +243,7 @@ h6 {
   .social-list-menu {
     display: flex;
     justify-content: center;
-    padding-top: 260px;
+    padding-top: auto;
     padding-bottom: 40px;
     gap: 10px;
   }
@@ -269,16 +272,17 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .link-logo-mobile {
     font-size: 20px;
   }
   .menu-mobile {
-    width: 330px;
+    width: 60%;
+    max-width: 330px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1279px) {
   .burger-btn {
     display: none;
   }

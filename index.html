@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="container header-container">
-        <a class="link-logo-mobile" href="./index.html">watchcharm</a>
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="list-item current"><a href="">Home</a></li>
-            <li class="list-item"><a href="">About Us</a></li>
-            <li class="list-item"><a href="">Catalog</a></li>
-            <li class="list-item"><a href="">Sale</a></li>
-            <li class="list-item"><a href="">Reviews</a></li>
-            <li class="list-item"><a href="">Contact Us</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container header-container">
+      <a class="link-logo-mobile" href="./index.html">watchcharm</a>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="list-item current"><a href="">Home</a></li>
+          <li class="list-item"><a href="">About Us</a></li>
+          <li class="list-item"><a href="">Catalog</a></li>
+          <li class="list-item"><a href="">Sale</a></li>
+          <li class="list-item"><a href="">Reviews</a></li>
+          <li class="list-item"><a href="">Contact Us</a></li>
+        </ul>
+        <ul class="social-list">
+          <li class="header-social-link">
+            <a class="social-link" href="">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-link">
+            <a class="social-link" href="">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-link">
+            <a class="social-link" href="">
+              <svg class="social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-YouTube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger-btn" type="button" id="openMenuButton">
+        <svg class="logo-mobile" width="34" height="34">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <button class="button" id="openModalButton"></button>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <button class="button close-button" id="closeModalButton"></button>
+      </div>
+    </div>
+
+    <div class="menu-mobile is-open" id="menuMobile">
+      <div class=" container modal-menu-mobile">
+        <button type="button" class="menu-mobile-button-close" id="closeMenuButton">
+          <svg class="button-icon-close" width="34" height="34">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="mobile-menu-list">
+            <li class="menu-item menu-current"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">About Us</a></li>
+            <li class="menu-item"><a href="">Catalog</a></li>
+            <li class="menu-item"><a href="">Sale</a></li>
+            <li class="menu-item"><a href="">Reviews</a></li>
+            <li class="menu-item"><a href="">Contact Us</a></li>
           </ul>
-          <ul class="social-list">
-            <li class="header-social-link">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+        </div>
+        <div>
+          <ul class="social-list-menu">
+            <li class="menu-social-link">
+              <a class="menu-link" href="">
+                <svg class="social-icon-menu" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="header-social-link">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="menu-social-link">
+              <a class="menu-link" href="">
+                <svg class="social-icon-menu" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="header-social-link">
-              <a class="social-link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="menu-social-link">
+              <a class="menu-link" href="">
+                <svg class="social-icon-menu" width="20" height="20">
                   <use href="./images/icons.svg#icon-YouTube"></use>
                 </svg>
               </a>
             </li>
           </ul>
-        </nav>
-        <button class="burger-btn" type="button">
-          <svg class="logo-mobile" width="34" height="34">
-            <use href="./images/icons.svg#icon-burger-menu"></use>
-          </svg>
-        </button>
+        </div>
       </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container hero-container">
-                    <div class="title-container">
-                        <div class="hero-title-container">
-                            <h1 class="hero-title">Welcome to our <span class="span-hero">collection </span> of premium watches</h1>
-                        </div>
-                        <div class="hero-small-title">
-                        <p class="small-title">Our watches are not just timepieces, but also an expression of your personality and lifestyle. From classic designs to modern ones, we have a watch to suit every taste and occasion.</p>
-                        </div> 
-                    </div>                   
-                    <div class="images-scroll-container">
-                        <ul class="image-list">
-                            <li><img src="./images/image1.png"  width="" height="" alt=""></li>
-                            <li><img src="./images/image2.png" width="" height="" alt=""></li>
-                            <li><img src="./images/image3.png" width="" height="" alt=""></li>
-                        </ul>                       
-                      <p class="scroll">Scroll down</p>
-                    </div>               
-            </div>
-        </section>
-    </main>
-  </body>
+    </div>
+  </header>
+  <script src="./menu.js"></script>
+</body>
+
 </html>

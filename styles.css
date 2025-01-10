@@ -229,7 +229,7 @@ h6 {
   .mobile-menu-list-container {
     display: flex;
     justify-content: center;
-    padding-top: 240px;
+    padding-top: 290px;
   }
   .button-icon-close {
     stroke: #fbfbfb;
@@ -252,7 +252,7 @@ h6 {
   .social-container {
     display: flex;
     justify-content: center;
-    padding-top: 240px;
+    padding-top: 200px;
     padding-bottom: 40px;
     
   }
@@ -269,10 +269,6 @@ h6 {
   }
   .menu-link {
     fill: #fbfbfb;
-  }
-  .menu-link:focus,
-  .menu-link:hover {
-    fill: #3350e9;
   }
   .menu-current {
     position: relative;
@@ -302,16 +298,20 @@ h6 {
     height: 1024px;
   }
   .mobile-menu-list-container {
-    padding-top: 310px;
+    padding-top: 420px;
   }
   .social-container {
-    padding-top: 350px;
+    padding-top: 210px;
     padding-bottom: 50px;
   }
   .mobile-menu-list {
     gap: 32px;
     height: 278px;
   }
+    .button-icon-close {
+      width: 40px;
+      height: 40px;
+    }
 }
 
 @media screen and (min-width: 1279px) {

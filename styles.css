@@ -194,12 +194,16 @@ h6 {
 @media screen and (min-width: 320px) {
   .menu-mobile {
     display: none;
-    background: rgba(12, 12, 12, 0.92);
+    background-color: rgba(12, 12, 12, 0.92);
+    background-image: url(./images/watch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 812px;
     position: fixed;
     top: 0;
     right: 0;
     width: 80%;
-    max-width: 200px;
+    max-width: 240px;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -221,18 +225,22 @@ h6 {
     right: 20px;
     border: 1px;
   }
+  .mobile-menu-list-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 240px;
+  }
   .button-icon-close {
     stroke: #fbfbfb;
   }
-  
   .mobile-menu-list {
+    width: 73px;
+    height: 238px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    gap: 32px;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    gap: 24px;
   }
   .menu-item {
     font-size: 14px;
@@ -240,12 +248,23 @@ h6 {
     text-align: center;
     color: #fbfbfb;
   }
-  .social-list-menu {
+  .social-container {
     display: flex;
     justify-content: center;
-    padding-top: auto;
+    padding-top: 240px;
     padding-bottom: 40px;
+    
+  }
+  .social-list-menu {
+    display: flex;
     gap: 10px;
+  }
+  .menu-social-link {
+    border: 1px solid rgba(251, 251, 251, 0.1);
+      border-radius: 10px;
+      padding: 8px;
+      width: 36px;
+      height: 36px;
   }
   .menu-link {
     fill: #fbfbfb;
@@ -279,6 +298,18 @@ h6 {
   .menu-mobile {
     width: 60%;
     max-width: 330px;
+    height: 1024px;
+  }
+  .mobile-menu-list-container {
+    padding-top: 310px;
+  }
+  .social-container {
+    padding-top: 350px;
+    padding-bottom: 50px;
+  }
+  .mobile-menu-list {
+    gap: 32px;
+    height: 278px;
   }
 }
 
